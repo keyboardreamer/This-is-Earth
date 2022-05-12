@@ -1,0 +1,82 @@
+<head>
+  <title>The Planet | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="hover">
+  <nav class="navbar bg-transparent">
+ <div class="container-fluid">
+   <div class="navbar-header">
+     <a style="color:white;" class="navbar-brand" href="https://codepen.io/naffis-tang-jing/pen/KKQgzwY">The Planet</a>
+   </div>
+   <ul class="nav navbar-nav text-white">
+    <li><a href="planethome.html" style="color:white;" onMouseOver="this.style.background='none'"><b>Home</b></a></li>
+    <li><a href="planetforest.html" style="color:white;" onMouseOver="this.style.background='none'">Forest</a></li>
+    <li><a href="planetocean.html" style="color:white;" onMouseOver="this.style.background='none'">Ocean</a></li>
+    <li><a href="planetdesert.html" style="color:white;" onMouseOver="this.style.background='none'">Desert</a></li>
+   </ul>
+ </div>
+</nav>
+ <h1 id="text">Our Planet</h1>
+ <p id="description">explore the planet with us</p>
+ <button id="jom" onclick="location.href='planetforest.html'">lets go</button> 
+</div>
+<style>
+    body{
+background-image:url('https://browsecat.net/sites/default/files/4k-earth-surface-wallpapers-41082-101-5955475.png');
+background-size:cover;
+}body{
+background-image:url('https://browsecat.net/sites/default/files/4k-earth-surface-wallpapers-41082-101-5955475.png');
+background-size:cover;
+}
+
+#text{
+color:white;
+text-align:center;
+padding-top:30vh;
+font-size:80px;
+animation:titleonly 1s linear;
+}
+
+@keyframes titleonly{
+0%{
+  opacity:0%;
+  padding-top:29.5vh;
+}
+}
+
+#description{
+color:white;
+text-align:center;
+margin-top:0vh;
+animation:size 1s linear;
+}
+
+@keyframes size{
+0%{
+  margin-top:4vh;
+  opacity:0%;
+}
+}
+
+#jom{
+background-color:white;
+border:none;
+border-radius:24px;
+width:80px;
+height:40px;
+margin-left:47%;
+}
+
+#hover{
+height:100vh;
+width:100vw;
+background-color:rgba(8,8,8,0.4)
+}
+</style>
+</body>
