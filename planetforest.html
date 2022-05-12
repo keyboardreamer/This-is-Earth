@@ -1,0 +1,62 @@
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  
+<body>
+  <div id="hover">
+   <nav class="navbar bg-transparent">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a style="color:white;" class="navbar-brand" href="#">Our Planet</a>
+       </div>
+       <ul class="nav navbar-nav text-white">
+        <li><a href="planethome.html" style="color:white;" onMouseOver="this.style.background='none'">Home</a></li>
+        <li><a href="planetforest.html" style="color:white;" onMouseOver="this.style.background='none'"><b>Forest</b></a></li>
+        <li><a href="planetocean.html" style="color:white;" onMouseOver="this.style.background='none'">Ocean</a></li>
+        <li><a href="planetdesert.html" style="color:white;" onMouseOver="this.style.background='none'">Desert</a></li>
+       </ul>
+     </div>
+   </nav>
+   <h1 id="text">The forest</h1>
+   <p id="description">Do you know forests are home to over 80 percent of land animals and plants and cover 31 percent of the world's total land area. About 1.6 billion people around the world depend on forests for their livelihoods and daily subsistence needs.</p>
+ </div>
+ <style>
+     body{
+  background-image: url('https://images.pexels.com/photos/574159/pexels-photo-574159.jpeg');
+  background-size:cover;
+}
+
+#hover{
+  width:100vw;
+  height:100vh;
+  background-image:linear-gradient(90deg,rgb(0, 0, 0,0.8),rgb(0, 0, 0,0.55),rgb(0, 0, 0,0.3));
+  color:white;
+}
+
+#text{
+  padding-top:24vh;
+  font-size:80px;
+  padding-left:35px;
+  animation:moveleft 1s linear;
+}
+
+@keyframes moveleft{
+  0%{
+    opacity:0%;
+    padding-left:20px;
+  }
+}
+
+#description{
+  padding-top:0vh;
+  font-size:20px;
+  padding-left:40px;
+  padding-right:500px;
+}
+ </style>
+</body>
