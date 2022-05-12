@@ -12,7 +12,7 @@
     <nav class="navbar bg-transparent">
    <div class="container-fluid">
      <div class="navbar-header">
-       <a style="color:white;" class="navbar-brand" href="#">The Planet</a>
+       <a style="color:white;" class="navbar-brand" href="https://codepen.io/naffis-tang-jing/pen/KKQgzwY">The Planet</a>
      </div>
      <ul class="nav navbar-nav text-white">
       <li><a href="planethome.html" style="color:white;" onMouseOver="this.style.background='none'"><b>Home</b></a></li>
@@ -30,6 +30,9 @@
       body{
   background-image:url('https://browsecat.net/sites/default/files/4k-earth-surface-wallpapers-41082-101-5955475.png');
   background-size:cover;
+}body{
+  background-image:url('https://browsecat.net/sites/default/files/4k-earth-surface-wallpapers-41082-101-5955475.png');
+  background-size:cover;
 }
 
 #text{
@@ -37,13 +40,28 @@
   text-align:center;
   padding-top:30vh;
   font-size:80px;
+  animation:titleonly 1s linear;
+}
+
+@keyframes titleonly{
+  0%{
+    opacity:0%;
+    padding-top:29.5vh;
+  }
 }
 
 #description{
   color:white;
   text-align:center;
   margin-top:0vh;
-  font-size: 20px;
+  animation:size 1s linear;
+}
+
+@keyframes size{
+  0%{
+    margin-top:4vh;
+    opacity:0%;
+  }
 }
 
 #jom{
@@ -59,15 +77,6 @@
   height:100vh;
   width:100vw;
   background-color:rgba(8,8,8,0.4)
-}
-
-.navbar-nav li{
-  color:white;
-}
-
-.navvar-nav > li > a:hover{
-    background-color:red;
-    background-image: linear-gradient(rgb(0, 0, 0,1),rgb(0, 0, 0,0));
 }
   </style>
 </body>
